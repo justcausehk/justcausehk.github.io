@@ -11,6 +11,7 @@ content:
         dir: asc
         custom:
             - _banner
+            - _news
             - _mission
             - _values
             - _bottom

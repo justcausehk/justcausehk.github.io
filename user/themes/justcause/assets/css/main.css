@@ -2067,8 +2067,8 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: #83d3c9;
-			border-color: #83d3c9;
+			background: #F6A370;
+			border-color: #F6A370;
 			color: #fff !important;
 		}
 
@@ -2076,8 +2076,8 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: #F6B58E !important;
+				border-color: #F6B58E !important;
 			}
 
 		input[type="button"].fit,
@@ -2305,17 +2305,17 @@
 	.dropotron {
 		background: #fff;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-		line-height: 2.25em;
+		line-height: 2.5em;
 		min-width: 13em;
-		padding: 1em 0;
+		padding-top: 0.5em;
 		text-transform: uppercase;
-		margin-top: calc(-1em + 1px);
+		margin-top: calc(-0.75em + 1px);
 	}
 
 		.dropotron.level-0 {
 			font-size: 0.7em;
 			font-weight: 400;
-			margin-top: 1.5em;
+			margin-top: 0.75em;
 		}
 
 			.dropotron.level-0:before {
@@ -2344,7 +2344,7 @@
 			}
 
 			.dropotron > li:hover > a {
-				background: #83d3c9;
+				background: #648BB7;
 				color: #fff;
 			}
 
@@ -2508,7 +2508,7 @@
 			}
 
 	body.index #main {
-		padding-top: 5em;
+		padding-top: 0em;
 	}
 
 /* CTA */
@@ -3224,4 +3224,46 @@
 
 	.align-center{
 		text-align: center;
+	}
+
+	#news{
+		margin-bottom: 3em;
+		-moz-animation: reveal-banner 1s 1s ease-in-out;
+		-webkit-animation: reveal-banner 1s 1s ease-in-out;
+		-ms-animation: reveal-banner 1s 1s ease-in-out;
+		animation: reveal-banner 1s 1s ease-in-out;
+		-moz-animation-fill-mode: forwards;
+		-webkit-animation-fill-mode: forwards;
+		-ms-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		opacity: 0;
+	}
+
+	.newsarticle{
+		background-color: #ABB4C4;
+		color: #fff;
+		margin-left: 0.5em;
+		margin-top: 0;
+		padding: 0.5em;
+		padding-bottom: 0;
+		display: inline-block;
+	}
+
+	.newsarticle:first-child{
+		margin: 0 1em;
+	}
+
+	.newsarticle:hover{
+		background-color: #8F97A5;
+	}
+
+	.latestnews{
+		position: relative;
+		background-color: #648BB7;
+		color: #fff;
+		font-weight: 200;
+		font-style: italic;
+		top: -4.5em;
+		padding: 0.5em;
+		text-transform: uppercase;
 	}

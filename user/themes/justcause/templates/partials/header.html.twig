@@ -27,7 +27,7 @@
           {% endfor %}
         </ul>
       </li>
-      {% set current_page = (page.title=='Contact') ? 'current' : '' %}
+      {% set current_page = (page.menu=='Contact') ? 'current' : '' %}
       <li class="{{ current_page }}">
         <a href="./contact">
             Contact

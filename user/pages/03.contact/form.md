@@ -5,7 +5,7 @@ body_class: contact
 icon: envelope
 menu: Contact
 form:
-    name: my-nice-form
+    name: my-contact-form
     fields:
         - name: name
           label: Name

@@ -102,7 +102,7 @@ class __TwigTemplate_facef95c6d515cd38a44c56f681e8577b1a9e9ec6387aa7ead74c77d45b
       </li>
       ";
         // line 30
-        $context["current_page"] = ((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array()) == "Contact")) ? ("current") : (""));
+        $context["current_page"] = ((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "menu", array()) == "Contact")) ? ("current") : (""));
         // line 31
         echo "      <li class=\"";
         echo (isset($context["current_page"]) ? $context["current_page"] : null);
@@ -178,7 +178,7 @@ class __TwigTemplate_facef95c6d515cd38a44c56f681e8577b1a9e9ec6387aa7ead74c77d45b
 /*           {% endfor %}*/
 /*         </ul>*/
 /*       </li>*/
-/*       {% set current_page = (page.title=='Contact') ? 'current' : '' %}*/
+/*       {% set current_page = (page.menu=='Contact') ? 'current' : '' %}*/
 /*       <li class="{{ current_page }}">*/
 /*         <a href="./contact">*/
 /*             Contact*/

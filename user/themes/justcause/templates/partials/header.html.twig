@@ -1,0 +1,41 @@
+<header id="header" class="{{ page.header.header_class }}">
+  <h1 id="logo"><a href="{{ base_url_absolute }}">{{ site.logo.text1 }} <span>{{ site.logo.text2 }}</span></a></h1>
+  <nav id="nav">
+    <ul>
+      {% set current_page = (page.title=='Home') ? 'current' : '' %}
+      <li class="{{ current_page }}">
+        <a href="{{ base_url_absolute }}">
+          Welcome
+        </a>
+      </li>
+      {% set current_page = (page.title=='About') ? 'current' : '' %}
+      <li class="submenu {{ current_page }}">
+        <a href="./about">About</a>
+        <ul>
+          {% for page in pages.children %}
+          {% if page.visible %}
+          {% if page.title == 'About' %}
+          {% for item in page.collection() %}
+          <li>
+            <a href="./about/#{{ item.header.idlink }}">
+              {{ item.title }}
+            </a>
+          </li>
+          {% endfor %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+      {% set current_page = (page.title=='Contact') ? 'current' : '' %}
+      <li class="{{ current_page }}">
+        <a href="./contact">
+            Contact
+        </a>
+      </li>
+      {% for button in site.buttons %}
+      <li><a href="{{ button.link }}" class="button special">{{ button.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

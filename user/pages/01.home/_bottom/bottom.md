@@ -1,11 +1,11 @@
 ---
-title: Ready to do <strong>something</strong>?
+title: Want to get in <strong>touch</strong>?
 buttons:
-    - text: Take My Money
+    - text: Make Appointment
       url: '#'
       class: special
-    - text: LOL Wut
-      url: '#'  
+    - text: Contact Us
+      url: './contact'  
 menu: after_article      
 ---
-Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.
+We are always here for our potential clients.

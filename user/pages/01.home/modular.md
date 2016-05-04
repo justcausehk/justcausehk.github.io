@@ -1,6 +1,6 @@
 ---
-title: Twenty
-menu: Home
+title: Home
+menu: Welcome
 onpage_menu: true
 body_class: index
 header_class: alt
@@ -11,9 +11,7 @@ content:
         dir: asc
         custom:
             - _banner
-            - _header
-            - _icons
-            - _features
+            - _mission
+            - _values
+            - _bottom
 ---
-
-

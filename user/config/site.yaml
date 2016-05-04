@@ -1,42 +1,33 @@
-title: Twenty
+title: Just Cause+
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: Jonathan Ma
+  email: 'justcausehk@gmail.com'
 metadata:
-    description: 'Twenty is a free and responsive theme for **Grav**. Its a port of Twenty template by HTML5 UP.'
+    description: '﻿﻿​A university-student-run start-up providing professional consulting services to Social Enterprises & NGOs.'
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Just Cause+
+email: justcausehk@gmail.com
+description: "﻿﻿​The official site of Just Cause+, a university-student-run start-up providing professional consulting services to Social Enterprises & NGOs."
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - label: Twitter
-    url: "#"
-    icon: twitter
   - label: Facebook
     url: "#"
     icon: facebook
   - label: Google+
-    url: "#"
+    url: "mail:justcausehk@gmail.com"
     icon: google-plus
-  - label: Github
-    url: "#"
-    icon: github
-  - label: Dribbble
-    url: "#"
-    icon: dribbble
 
 copyright:
-  line1: Untitled
+  line1: Just Cause+ 2016
   line2: Design:
-  url: http://html5up.net
-  url_label: HTML5 UP
+  url: http://ihome.ust.hk/~jcema
+  url_label: JohnMa
 
 logo:
-  text1: "Twenty"
-  text2: "by HTML5 UP"
+  text1: "Just Cause+"
+  text2: "Just because we care."
 
 # Submenu
 submenu:
@@ -52,5 +43,5 @@ submenu:
     link: "#"
 
 buttons:
-  - text: "Sign Up"
+  - text: "Make Appointment"
     link: "#"

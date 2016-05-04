@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp/www/justcause/user/config/system.yaml',
-    'modified' => 1461719280,
+    'modified' => 1462341188,
     'data' => [
         'home' => [
             'alias' => '/home'
         ],
         'pages' => [
-            'theme' => 'twenty',
+            'theme' => 'justcause',
             'process' => [
                 'markdown' => true,
                 'twig' => false

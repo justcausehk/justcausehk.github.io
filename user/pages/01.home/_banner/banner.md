@@ -1,14 +1,13 @@
 ---
-title: TWENTY
+title: JUST CAUSE+
 buttons:
     - text: Tell me more
       url: '#main'
 menu: before_article      
 ---
-
-<p>This is <strong>Twenty</strong>, a free
+<p>This is <strong>Just Cause+</strong>,
     <br />
-    responsive template
+    a university-student-run
     <br />
-    by <a href="http://html5up.net">HTML5 UP</a>.
+    start-up.
 </p>

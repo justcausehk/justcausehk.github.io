@@ -2,12 +2,12 @@ home:
   alias: '/home'
 
 pages:
-  theme: twenty
+  theme: justcause
   process:
     markdown: true
     twig: false
-  markdown: 
-    extra: true  
+  markdown:
+    extra: true
 
 cache:
   enabled: false

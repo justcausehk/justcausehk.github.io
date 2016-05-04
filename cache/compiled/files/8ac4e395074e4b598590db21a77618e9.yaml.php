@@ -2,54 +2,39 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp/www/justcause/user/config/site.yaml',
-    'modified' => 1461719280,
+    'modified' => 1462359366,
     'data' => [
-        'title' => 'Twenty',
+        'title' => 'Just Cause+',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@test.com'
+            'name' => 'Jonathan Ma',
+            'email' => 'justcausehk@gmail.com'
         ],
         'metadata' => [
-            'description' => 'Twenty is a free and responsive theme for **Grav**. Its a port of Twenty template by HTML5 UP.'
+            'description' => '﻿﻿​A university-student-run start-up providing professional consulting services to Social Enterprises & NGOs.'
         ],
-        'email' => 'your-email@domain.com',
-        'description' => 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.',
+        'email' => 'justcausehk@gmail.com',
+        'description' => '﻿﻿​The official site of Just Cause+, a university-student-run start-up providing professional consulting services to Social Enterprises & NGOs.',
         'social' => [
             0 => [
-                'label' => 'Twitter',
-                'url' => '#',
-                'icon' => 'twitter'
-            ],
-            1 => [
                 'label' => 'Facebook',
                 'url' => '#',
                 'icon' => 'facebook'
             ],
-            2 => [
+            1 => [
                 'label' => 'Google+',
-                'url' => '#',
+                'url' => 'mail:justcausehk@gmail.com',
                 'icon' => 'google-plus'
-            ],
-            3 => [
-                'label' => 'Github',
-                'url' => '#',
-                'icon' => 'github'
-            ],
-            4 => [
-                'label' => 'Dribbble',
-                'url' => '#',
-                'icon' => 'dribbble'
             ]
         ],
         'copyright' => [
-            'line1' => 'Untitled',
+            'line1' => 'Just Cause+ 2016',
             'line2' => 'Design:',
-            'url' => 'http://html5up.net',
-            'url_label' => 'HTML5 UP'
+            'url' => 'http://ihome.ust.hk/~jcema',
+            'url_label' => 'JohnMa'
         ],
         'logo' => [
-            'text1' => 'Twenty',
-            'text2' => 'by HTML5 UP'
+            'text1' => 'Just Cause+',
+            'text2' => 'Just because we care.'
         ],
         'submenu' => [
             0 => [
@@ -75,7 +60,7 @@ return [
         ],
         'buttons' => [
             0 => [
-                'text' => 'Sign Up',
+                'text' => 'Make Appointment',
                 'link' => '#'
             ]
         ]

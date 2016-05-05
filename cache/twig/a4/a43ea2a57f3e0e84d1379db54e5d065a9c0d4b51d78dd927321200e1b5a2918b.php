@@ -17,20 +17,25 @@ class __TwigTemplate_087e17b1a92ef9d2a539fb36271c59330e1f03dcffcd2219d15ca029ba0
     {
         // line 1
         echo "<div id=\"news\">
-    <span class=\"latestnews\">Latest News</span>
+    <span class=\"latestnews\">";
+        // line 2
+        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "title", array());
+        echo "</span>
     ";
         // line 3
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "children", array(), "method"));
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/news"), "method"), "children", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
             // line 4
-            echo "        <section class=\"3u 12u(narrower) newsarticle\">
+            echo "        <a class=\"3u 12u newsarticle\" href=\"./news/#";
+            echo $this->getAttribute($context["article"], "slug", array());
+            echo "\">
             ";
             // line 5
             if ($this->getAttribute($this->getAttribute($context["article"], "header", array()), "image", array())) {
                 // line 6
                 echo "                <img src=\"";
-                echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($this->getAttribute($context["article"], "header", array()), "image", array()), array(), "array"), "resize", array(0 => 100), "method"), "url", array());
+                echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/news"), "method"), "media", array()), $this->getAttribute($this->getAttribute($context["article"], "header", array()), "image", array()), array(), "array"), "resize", array(0 => 100), "method"), "url", array());
                 echo "\" alt=\"\" />
             ";
             }
@@ -41,7 +46,7 @@ class __TwigTemplate_087e17b1a92ef9d2a539fb36271c59330e1f03dcffcd2219d15ca029ba0
             echo $this->getAttribute($context["article"], "title", array());
             echo "</h3>
             </header>
-        </section>
+        </a>
     ";
         }
         $_parent = $context['_parent'];
@@ -64,20 +69,20 @@ class __TwigTemplate_087e17b1a92ef9d2a539fb36271c59330e1f03dcffcd2219d15ca029ba0
 
     public function getDebugInfo()
     {
-        return array (  51 => 13,  41 => 9,  38 => 8,  32 => 6,  30 => 5,  27 => 4,  23 => 3,  19 => 1,);
+        return array (  56 => 13,  46 => 9,  43 => 8,  37 => 6,  35 => 5,  30 => 4,  26 => 3,  22 => 2,  19 => 1,);
     }
 }
 /* <div id="news">*/
-/*     <span class="latestnews">Latest News</span>*/
-/*     {% for article in page.children() %}*/
-/*         <section class="3u 12u(narrower) newsarticle">*/
+/*     <span class="latestnews">{{page.header.title}}</span>*/
+/*     {% for article in page.find('/news').children %}*/
+/*         <a class="3u 12u newsarticle" href="./news/#{{article.slug}}">*/
 /*             {% if article.header.image %}*/
-/*                 <img src="{{ page.media[article.header.image].resize(100).url }}" alt="" />*/
+/*                 <img src="{{ page.find('/news').media[article.header.image].resize(100).url }}" alt="" />*/
 /*             {% endif %}*/
 /*             <header>*/
 /*                 <h3>{{ article.title }}</h3>*/
 /*             </header>*/
-/*         </section>*/
+/*         </a>*/
 /*     {% endfor %}*/
 /* </div>*/
 /* */
